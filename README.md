@@ -38,7 +38,26 @@ CoreHCM is a Human Capital Management (HCM) application designed to streamline H
 
 ## Folder Structure
 
-CoreHCM/ ├── backend/ │ ├── node_modules/ │ ├── controllers/ │ ├── models/ │ ├── routes/ │ ├── utils/ │ ├── index.js │ ├── package.json │ ├── .env │ └── ... ├── frontend/ │ ├── node_modules/ │ ├── public/ │ ├── src/ │ ├── package.json │ ├── .env │ └── ... ├── .gitignore └── README.md
+CoreHCM/
+├── backend/
+│   ├── node_modules/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── index.js
+│   ├── package.json
+│   ├── .env
+│   └── ...
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   ├── .env
+│   └── ...
+├── .gitignore
+└── README.md
 
 ## Prerequisites
 
