@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# CoreHCM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CoreHCM is a Human Capital Management (HCM) application designed to streamline HR processes, manage employee data, and enhance organizational productivity. Built with the SERN stack (SQLite, Express.js, React.js, Node.js), CoreHCM provides a comprehensive solution for managing human resources efficiently.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Employee information management
+- Attendance tracking
+- Payroll processing
+- Performance evaluations
+- Role-based access control
+- Reporting and analytics
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend:**
+  - React.js
+  - Tailwind CSS
+  - Axios
+- **Backend:**
+  - Node.js
+  - Express.js
+  - better-sqlite3 (SQLite database integration)
+- **Database:**
+  - SQLite
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Folder Structure
 
-### `npm run build`
+CoreHCM/ ├── backend/ │ ├── node_modules/ │ ├── controllers/ │ ├── models/ │ ├── routes/ │ ├── utils/ │ ├── index.js │ ├── package.json │ ├── .env │ └── ... ├── frontend/ │ ├── node_modules/ │ ├── public/ │ ├── src/ │ ├── package.json │ ├── .env │ └── ... ├── .gitignore └── README.md
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Before you begin, ensure you have met the following requirements:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js** installed (version 14.x or higher recommended)
+- **npm** or **yarn** package manager
+- **Git** installed (for cloning the repository)
+- **SQLite** installed on your machine
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the Repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/yourusername/CoreHCM.git
+cd CoreHCM
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Install Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### a. Backend Dependencies
 
-## Learn More
+```bash
+cd backend
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### b. Frontend Dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd ../frontend
+npm install
+```
 
-### Code Splitting
+### 2. Run the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### a. in the root directory run
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm start
+```
