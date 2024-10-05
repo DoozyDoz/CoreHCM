@@ -1,6 +1,7 @@
 // src/App.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Button from './components/button';
 
 function App() {
   const [reports, setReports] = useState([]);
@@ -17,6 +18,11 @@ function App() {
       });
   }, []);
 
+  const handleClick = () => {
+    console.log('Button clicked!');
+};
+ 
+ 
   return (
     <div>
       <h1>Reports</h1>
@@ -28,6 +34,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <Button text="Click Me" onClick={handleClick} />
     </div>
   );
 }
