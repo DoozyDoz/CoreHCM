@@ -1,5 +1,3 @@
-// Sidebar.jsx
-
 import React, { useState } from "react";
 import { Collapse } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
